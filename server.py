@@ -8,6 +8,7 @@ def listen_for_messages(peer_socket):
             if message:
                 print(f"Received message: {message}")
         except:
+            print("Connection lost")
             break
 
 def server():
